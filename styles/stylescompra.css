@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+.navbar {
+    background: rgb(43,76,219);
+    background: linear-gradient(90deg, rgba(43,76,219,1) 0%, rgba(84,169,198,1) 21%, rgba(65,255,16,1) 49%, rgba(246,246,246,1) 89%);}
+
+body {
+    min-height: 100vh;
+    background-color: var(--clr-gray);
+    background-color: greenyellow;
+    background-image: url("../templace/27347.jpg");
+    background-size: 520px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.zapatos-todos{
+    background: rgb(43,76,219);
+    background: radial-gradient(circle, rgba(43,76,219,1) 7%, rgba(84,169,198,1) 54%, rgba(65,255,16,1) 85%);
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    height: 350px;
+    
+}
+
+
+@media screen and (min-width: 470px) {
+    main {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.zapatos {
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.zapatos-imagen {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.zapatos-imagen img {
+    width: 100%;
+    max-width: 9rem;
+}
+
+.zapatos-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.nombre-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.zapatos-nombre {
+    font-size: 20px;
+}
+
+.zapatos-tipos {
+    display: flex;
+    gap: .5rem;
+    font-size: .90rem;
+    font-weight: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.des{
+    padding-top: 10px;
+    color: aliceblue;
+    font-size: 20px;
+}
+footer{
+    padding-top: 12px;
+    height: 50px;
+    text-align: center ;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight:500;
+    background: rgb(203, 203, 203);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.752) 0%, rgb(64, 89, 128) 20%, rgba(93, 170, 206, 0.581) 26%, rgba(64, 255, 16, 0.466) 38%, rgba(0, 0, 0, 0.674) 89%);
+
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+
+
+}
+
+.boton{
+    display:flex;
+    border: none;
+    background: rgb(43,76,219);
+    background: radial-gradient(circle, rgba(43,76,219,1) 7%, rgba(84,169,198,1) 54%, rgba(65,255,16,1) 85%);
+    color: aliceblue;
+    padding: 10px 30px ;
+    border-radius: 20px;
+
+
+}
+
